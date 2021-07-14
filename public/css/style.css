@@ -1,0 +1,301 @@
+    /* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap'); */
+    /* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,100;1,200&display=swap'); */
+    
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        /* font-family: 'Merriweather',serif; */
+        /* font-family: 'IBM Plex Sans'; */
+        font-family: 'IBM Plex Mono', monospace;
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --main-bg: #1e272e;
+        --main-color: #0097e6;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .row {
+        margin: 0;
+    }
+    
+    .main_menu {
+        background-color: var(--main-bg);
+    }
+    
+    .navbar {
+        background-color: var(--main-bg);
+        color: #fff;
+        padding: 2rem 0;
+    }
+    
+    .navbar li {
+        margin-left: 2rem;
+    }
+    
+    .navbar a {
+        font-size: 1.8rem;
+        color: #fff;
+    }
+    
+    .navbar-toggler {
+        background-color: darkgoldenrod;
+    }
+    
+    .navbar a:hover {
+        color: yellowgreen;
+    }
+    
+    .fa-snowflake {
+        transition: all linear;
+        color: var(--main-color);
+        animation: rotat 2s linear infinite;
+    }
+    
+    @keyframes rotat {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    /* main header */
+    
+    .main_header_left {
+        height: 70rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .main_header_left p {
+        font-size: 2rem;
+    }
+    
+    .main_header_left h1 {
+        font-size: 4rem;
+        margin: 1rem 0 4rem 0;
+        text-transform: capitalize;
+    }
+    
+    .main_header_left h1 .weathr {
+        color: var(--main-color);
+    }
+    
+    .main_header_left button {
+        border: none;
+        padding: 0.9rem 1rem;
+        font-size: 1.4rem;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        box-shadow: 0 8px 7px -7px #000;
+        outline: none;
+    }
+    
+    .main_header_left button:hover {
+        color: var(--main-color);
+    }
+    
+    .main_header_right {
+        height: 70rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    figure.err {
+        width: 60rem;
+        height: 25rem;
+    }
+    
+    .main_header_right figure img {
+        filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0));
+    }
+    /* weather section */
+    
+    .weather_form {
+        width: 50%;
+        position: relative;
+        margin: 7rem auto;
+    }
+    
+    .weather_form input[type="text"] {
+        width: 100%;
+        padding: 2rem 5rem 2rem 2rem;
+        background: #1e202b;
+        color: white;
+        outline: none;
+        border-radius: 4rem;
+        font-size: 1.8rem;
+    }
+    
+     ::placeholder {
+        color: burlywood;
+    }
+    
+    .weather_form input[type="submit"] {
+        position: absolute;
+        font-size: 1.8rem;
+        justify-content: center;
+        /* right: 0;
+        padding: 2.2rem 5rem 2rem 2rem; */
+        border-radius: 4rem;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        padding: 0 3rem;
+        color: white;
+        border: none;
+        background: #009ad8;
+    }
+    
+    .weather_form input[type="submit"]:hover {
+        color: black;
+        background-color: rgb(87, 236, 99);
+    }
+    
+    .temp_inform {
+        width: 50rem;
+        margin: auto;
+        margin-bottom: 20px !important;
+        min-height: 25rem;
+        /* padding: 1rem; */
+        background-color: var(--main-bg);
+        /* background-color: transparent; */
+        font-family: monospace;
+        border-radius: 1rem;
+    }
+    
+    .top_layer {
+        width: 100%;
+        height: 20%;
+        background-color: #313a41;
+        justify-content: space-between;
+        border-radius: 1rem;
+        display: flex;
+    }
+    
+    .top_layer p {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        padding: 2rem;
+    }
+    
+    .temp_layer {
+        width: 100%;
+        height: 80%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .temp_layer #city_name {
+        padding: 2rem 0;
+        font-size: 2rem;
+        color: rgb(253, 254, 255);
+        font-weight: 400;
+    }
+    
+    .temp_layer .middle_layer_temp {
+        justify-content: space-around;
+        color: #fff;
+        display: flex;
+    }
+    
+    .temp_layer .middle_layer_temp p,
+    .temp_layer .middle_layer_temp .f {
+        font-size: 6rem;
+        font-weight: 900;
+    }
+    
+    .temp_layer .middle_layer_temp #temps span {
+        margin-right: 1rem;
+    }
+    
+    .fa {
+        color: #009ad8;
+    }
+    
+    sup {
+        font-size: 4rem;
+    }
+    
+    .data_hide {
+        visibility: hidden;
+        transition: all 0.3s linear;
+    }
+    /* footer  */
+    
+    footer {
+        width: 100%;
+        background-color: var(--main-bg);
+        margin-top: auto;
+    }
+    
+    footer p {
+        color: #fff;
+        margin: 0;
+        line-height: 10rem;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    /* To make website responsive */
+    
+    @media (max-width:768px) {
+        .main_header_left {
+            height: auto;
+            margin: 5rem 0;
+        }
+        .main_header_right {
+            height: auto;
+            margin-top: 3rem;
+        }
+        .weather_form {
+            width: auto;
+        }
+        .temp_inform {
+            width: auto;
+        }
+        .temp_layer .middle_layer_temp p,
+        .temp_layer .middle_layer_temp .f {
+            font-size: 4rem;
+            font-weight: 900;
+        }
+        sup {
+            font-size: 3rem;
+        }
+        .weather_form input[type="submit"] {
+            position: absolute;
+            font-size: 1rem;
+            justify-content: center;
+            /* right: 0;
+            padding: 2.2rem 5rem 2rem 2rem; */
+            border-radius: 4rem;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            padding: 0 3rem;
+            color: white;
+            border: none;
+            background: #009ad8;
+        }
+        .weather_form {
+            width: 350px;
+            right: 13px;
+        }
+    }
