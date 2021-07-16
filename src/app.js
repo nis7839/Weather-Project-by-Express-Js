@@ -39,9 +39,9 @@ app.get("*", (req, res) => {
     res.render("404er", {
         errmsg: "Oops Page not found, Click here to go back😇",
     });
-    `   `
+
 })
 
-app.listen(7500, () => {
+app.listen(port, () => {
     console.log("Listening.....");
 })
