@@ -256,7 +256,7 @@
     }
     /* To make website responsive */
     
-    @media (max-width:640px) {
+    @media (max-width:768px) {
         .main_header_left {
             height: auto;
             margin: 5rem 0;
@@ -267,6 +267,9 @@
         }
         .weather_form {
             width: auto;
+        }
+        .main_content {
+            margin-right: 10px !important;
         }
         .temp_inform {
             width: auto;
@@ -295,7 +298,10 @@
             background: #009ad8;
         }
         .weather_form {
-            width: 350px;
+            width: 335px;
             right: 13px;
+        }
+        #caraousel {
+            padding-bottom: 5rem;
         }
     }
