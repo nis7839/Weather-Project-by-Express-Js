@@ -304,5 +304,8 @@
         #caraousel {
             padding-bottom: 5rem;
         }
+        .carousel-inner .carousel-item {
+            transition: -webkit-transform 0.1s;
+        }
     }
     /* All these codes are of inner styling */
